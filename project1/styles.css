@@ -1,0 +1,112 @@
+
+/*Formula https://www.shecodes.io/athena/9580-how-to-create-a-box-with-html-and-css#:~:text=You%20can%20add%20a%20box,padding%2C%20margin%2C%20and%20morhttps://www.shecodes.io/athena/9580-how-to-create-a-box-with-html-and-css#:~:text=You%20can%20add%20a%20box,padding%2C%20margin%2C%20and%20more.
+https://www.w3schools.com/css/css_navbar.asp
+*/ 
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navlinks {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10;
+    border-radius: 5px; 
+}
+.nav{
+    margin: 0;
+    width: auto;
+    height: auto;
+    background-color: gold;
+    border: 2px solid gold;
+    margin: 20px;
+    padding: 20px;
+    text: center;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    border: 2px solid gold;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.container {
+    background-color: brown;
+    height: 500px;
+    width: 360px;
+    margin: 60px auto;
+    border-radius: 5px;
+}
+
+.header {
+    border: 3px solid gold;
+    border-radius: 6px;
+    height: 60px;
+    margin: 20px auto;
+    background-color: black;
+}
+
+.header h2 {
+    height: 40px;
+    margin: auto;
+}
+
+.header h2{
+    font-size: 13px;
+    margin: 0 0;
+    padding: 0;
+    color: gold;
+    text-align: center;
+}
+
+.slots {
+    display: flex;
+    background: color: purple;
+    border-radius: 5px;
+    border: 4px solid black;
+}
+
+.slot {
+    flex: 1 0 auto;
+    background: white;
+    height: 80px;
+    margin: 10px;
+    border: 4px solid gold;
+    border-radius: 5px;
+}
+
+.go {
+    width: 100%
+    color: black;
+    background-color: grey;
+    border: 2px solid green;
+    border-radius: 2px;
+    box-sizing: none;
+    
+}
+
+.go.inset{
+    width: 100px;
+    text-align: center;
+    margin: 10px auto;
+    background-color: gold;
+}
+
+.foot {
+    height: 150px;
+    background-color: black;
+    border: 2px solid black;
+}
+
+
+
