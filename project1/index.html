@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slot Machine Video Game</title>
-    <link rel = "stylesheet" href="styles.css">
+    <title>Slot Machine Game</title>
+    <link rel="stylesheet" href="C:/Users/tyim1/sei/projects/styles/styles.css">
 
     <!--
 Formula https://www.w3schools.com/html/html_css.asp
@@ -15,49 +15,50 @@ Formula https://www.geeksforgeeks.org/design-an-about-us-page-using-html-and-css
 </head>
 <body>
     <header>
-        <nav>
-            <div class = "Slot Machine Nav">
-                Slot Machine Nav
-            </div>
-           <div class = "nav"><ul class = "navlinks">
-                    <li><a href="#">
-                        Play!</a>
-                        </li>
-                        <li><a href="#">
-                            Project Description</a>
-                        </li>
-                    </div>
-                        </a></li>
-                        </a></li>
-                    </a></li>
-                </a></li>
+        <div class="header-text">Slot Machine Nav</div>
+        <nav class="nav">
+            <ul class="navlinks">
+                <li><a href="#homepage">Play!</a></li>
+                <li><a href="#play-and-description"> Project Description</a></li>
             </ul>
         </nav>
     </header>
-    <div class = "box"></div>
-    <div class ="container inset">
-        <div class ="header inset">
-            <img
-            src = "" class = "img-responsive nav-logo">
-            <h2>Come Play! The Slot Machine Game</h2>
-    
-        </div>
-        <div class = "slots inset">
+    <!-- Content Container -->
+    <div class="content-container">
+
+        <!-- Your original section -->
+        <div class="container inset">
+            <div class="header inset">
+                <img src="" class="img-responsive nav-logo">
+                <h2>Come Play! The Slot Machine Game</h2>
             </div>
-        <div class = "slot inset">
+            <div class="slots inset">
+                <!-- Reels go here -->
+                <div class="reel" id="reel1"></div>
+                <div class="reel" id="reel2"></div>
+                <div class="reel" id="reel3"></div>
             </div>
-        <div class = "slot inset">
+            <div class="outset">
+                <button class="go inset" onclick="startGame()">
+                    Go
+                </button>
+            </div>
+            <br>
+            <div class="foot inset">
+                <span class="logger"></span>
+            </div>
+            <!-- Additional buttons -->
+            <div class="buttons inset">
+                <button class="bet" value="50">Bet 50</button>
+                <button class="bet" value="100">Bet 100</button>
+                <button class="bet" value="150">Bet 150</button>
+            </div>
         </div>
+
+        <!-- Slot Reel Image -->
+        <img style="position: fixed; left: 0; top: 0; height: 100vh; width: auto;" src="C:/Users/tyim1/sei/projects/images/slotreel.webp" alt="Slot Reel Image">
+
     </div>
-    <div class = "outset">
-        <button class ="go inset">
-            Go
-        </button>
-    </div>
-</br>
-    <div class = "foot inset">
-        <span class = "logger"></span>
-    </div>
-</div>
+
 </body>
 </html>

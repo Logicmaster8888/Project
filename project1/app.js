@@ -31,3 +31,5 @@ if (slotOne ! = slotTwo || slotTwo !==slotThree) {
 $(".logger").append(" Not A Win")
 return [slotOne, slotTwo, slotThree];
 }
+
+// Formula https://www.codingcreativo.it/en/javascript-slot-machine/

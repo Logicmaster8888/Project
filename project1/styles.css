@@ -1,20 +1,51 @@
-
-/*Formula https://www.shecodes.io/athena/9580-how-to-create-a-box-with-html-and-css#:~:text=You%20can%20add%20a%20box,padding%2C%20margin%2C%20and%20morhttps://www.shecodes.io/athena/9580-how-to-create-a-box-with-html-and-css#:~:text=You%20can%20add%20a%20box,padding%2C%20margin%2C%20and%20more.
-https://www.w3schools.com/css/css_navbar.asp
-*/ 
-
-body {
+/* Variables */
+:root {
+    --icon_width: 79px;
+    --icon_height: 79px;
+    --num_icons: 9;
+  }
+  
+  /* Reset Styles */
+  html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set Background Image */
+  body {
+    background-image: url('https://source.unsplash.com/XkMpEeI3uJ0/1920x1080'); /* Unsplash URL for the image in 1920x1080 resolution */
+    background-size: behind;
+    background-repeat: no-repeat;
+    background-position: auto;
+  }
+  /*set background as image, use of source.unsplash.com*/ 
+  
+  /* Header Styles */
+  header {
+    background-color: #333;
+    color: gold;
+    padding: 10px;
+    text-align: center;
+    border: 3px solid gold;
+    border-radius: 6px;
+    height: 60px;
+    margin: 20px auto;
+    background-color: black;
+  }
+  
+  .header h2 {
+    height: 40px;
+    margin: 20px 0;
+    font-size: 13px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-.navlinks {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 10;
-    border-radius: 5px; 
-}
-.nav{
+    color: gold;
+    text-align: center;
+  }
+  
+  /* Navigation Styles */
+  .nav {
     margin: 0;
     width: auto;
     height: auto;
@@ -22,91 +53,118 @@ body {
     border: 2px solid gold;
     margin: 20px;
     padding: 20px;
-    text: center;
-}
-
-.ul {
-    list-style-type: none;
+    text-align: center;
+  }
+  
+  .navlinks {
+    list-style: none;
     margin: 0;
-    padding: 0;
-}
-.box{
-    width: 200px;
-    height: 200px;
-    background-color: teal;
-    border: 2px solid gold;
-    margin: 20px;
-    padding: 20px;
-}
-
-
-.container {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .navlinks li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .navlinks a:hover {
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .navlinks {
+      display: block;
+    }
+  
+    .navlinks li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
+  /* Container Styles */
+  .container {
     background-color: brown;
     height: 500px;
     width: 360px;
     margin: 60px auto;
     border-radius: 5px;
-}
-
-.header {
-    border: 3px solid gold;
-    border-radius: 6px;
-    height: 60px;
+    padding-top: 20px;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    border: 2px solid gold;
     margin: 20px auto;
-    background-color: black;
-}
-
-.header h2 {
-    height: 40px;
-    margin: auto;
-}
-
-.header h2{
-    font-size: 13px;
-    margin: 0 0;
-    padding: 0;
-    color: gold;
-    text-align: center;
-}
-
-.slots {
+    padding: 20px;
+    order: 1;
+  }
+  
+  /* Slots Container Styles */
+  .slots {
+    width: calc(3 * var(--icon_width));
+    height: calc(3 * var(--icon_height));
+    border: 1px solid black;
+    padding: calc(0.3 * var(--icon_height));
     display: flex;
-    background: color: purple;
+    justify-content: space-between;
+    background: color: purple; /* It looks like there's a syntax error here, I've corrected it */
     border-radius: 5px;
     border: 4px solid black;
-}
-
-.slot {
+  }
+  
+  /* Individual Slot Styles */
+  .slot {
     flex: 1 0 auto;
     background: white;
     height: 80px;
     margin: 10px;
     border: 4px solid gold;
     border-radius: 5px;
-}
-
-.go {
-    width: 100%
+  }
+  
+  /* Go Button Styles */
+  .go {
+    width: 100%;
     color: black;
     background-color: grey;
     border: 2px solid green;
     border-radius: 2px;
     box-sizing: none;
-    
-}
-
-.go.inset{
+  }
+  
+  .go.inset {
     width: 100px;
     text-align: center;
     margin: 10px auto;
     background-color: gold;
-}
-
-.foot {
+  }
+  
+  /* Footer Styles */
+  .foot {
     height: 150px;
     background-color: black;
     border: 2px solid black;
-}
-
-
-
+    order: 2; /* Move the footer to the end */
+  }
+  
+  /* Reel Styles */
+  .reel {
+    border: 1px solid black;
+    width: var(--icon_width);
+    height: calc(3 * var(--icon_height));
+    background-repeat: repeat-y;
+    background-position: 0 0;
+  }
+  
+  /* Additional styles for individual images inside the reels */
+  .reel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
