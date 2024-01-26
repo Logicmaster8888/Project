@@ -1,64 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to be set for viewport properties for better responsiveness on different devices -->
     <title>Slot Machine Game</title>
-    <link rel="stylesheet" href="C:/Users/tyim1/sei/projects/styles/styles.css">
-
-    <!--
-Formula https://www.w3schools.com/html/html_css.asp
-Formula https://www.geeksforgeeks.org/design-an-about-us-page-using-html-and-css/
--->
-
-
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <div class="header-text">Slot Machine Nav</div>
         <nav class="nav">
             <ul class="navlinks">
-                <li><a href="#homepage">Play!</a></li>
+                <li><a href="#">Play!</a></li>
                 <li><a href="#play-and-description"> Project Description</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="content-container">
-
-     
-        <div class="container inset">
-            <div class="header inset">
-                <img src="" class="img-responsive nav-logo">
+        <div class="container">
+            <div class="header">
                 <h2>Come Play! The Slot Machine Game</h2>
-            </div>
-            <div class="slots inset">
-                
-                <div class="reel" id="reel1"></div>
-                <div class="reel" id="reel2"></div>
-                <div class="reel" id="reel3"></div>
-            </div>
-            <div class="outset">
-                <button class="go inset" onclick="startGame()">
-                    Go
-                </button>
-            </div>
-            <br>
-            <div class="foot inset">
-                <span class="logger"></span>
-            </div>
-          
-            <div class="buttons inset">
-                <button class="bet" value="50">Bet 50</button>
-                <button class="bet" value="100">Bet 100</button>
-                <button class="bet" value="150">Bet 150</button>
+                <div class="betting-counter">
+                    Current Bet: <span id="currentBet">0</span>
+                </div>
+                <div class="betting-values">
+                    Betting Values Used: <span id="bettingValuesUsed">0</span>
+                </div>
+                <div class="slots">
+                    <div class="reel" id="reel1"></div>
+                    <div class="reel" id="reel2"></div>
+                    <div class="reel" id="reel3"></div>
+                </div>
+                <div class="outset">
+                    <button class="start" onclick="startGame()">
+                        Start
+                    </button>
+                </div>
+                <div class="foot">
+                    <span class="logger"></span>
+                </div>
+                <div class="reel-overlay">
+                    <a href="https://ibb.co/xJKc8hh">
+                        <img src="https://i.ibb.co/dGs3JBB/Gamblingimages.png" alt="Gamblingimages" border="0">
+                    </a>
+                </div>
+                <div class="buttons">
+                    <button class="bet" value="50" onclick="handleBetClick(50)">Bet 50</button>
+                    <button class="bet" value="100" onclick="handleBetClick(100)">Bet 100</button>
+                    <button class="bet" value="150" onclick="handleBetClick(150)">Bet 150</button>
+                </div>
             </div>
         </div>
-
-        
-        <img style="position: fixed; left: 0; top: 0; height: 100vh; width: auto;" src="C:/Users/tyim1/sei/projects/images/slotreel.webp" alt="Slot Reel Image">
-
     </div>
 
+    <script src="script.js"></script>
 </body>
+
 </html>
