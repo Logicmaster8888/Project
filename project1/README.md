@@ -161,5 +161,29 @@ Why:
     Getting Help
     I will be asking for help from the GA instructors frequently to see what is right, debugging, or understanding logic.
     Watching old videos for understanding concepts from class and how to apply them into our project.
+About the Project
+![Alt text](image.png)
+Slot Machine Game
 
-        
+Technologies Used:
+HTML
+CSS
+JavaScript
+GIMP - photo editor
+VS Code
+Unsplash.com
+https://imgbb.com/ - Image URL Hoster
+
+Getting Started: 
+
+Installation Instructions:
+Clone the Repo
+git clone 
+
+npm install
+
+
+Wireframes
+
+
+Contributing
