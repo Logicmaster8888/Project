@@ -7,6 +7,7 @@
 
 Game Slot Machine:
 Tyler Yim
+---------------------------------------------------------------------------------------------------------
 
 About the Project
 
@@ -15,7 +16,7 @@ About the Project
 ![Alt text](image-3.png)
 
 Slot Machine Game
-
+---------------------------------------------------------------------------------------------------------
 Description:
 This is a Slot Machine Game where it has 3 slots, each with a row of items that need to match. The bets are in increments of 50, with betting inputs of 50, 100, and 150. The fixed cost rate is at 50. 
 
@@ -34,6 +35,7 @@ I found online images from unsplash, as well as iphoto trial version, featuring 
 From my research it needs to be a continuous image for the reels to have a matched value. It's matched based on the size of the images. A link would need to be use to pull the image. The image is important because the use of the image is focused on initilizing the reels. I have them to the side of the frame so you can see all the items and options. I have createImageelement functions that come up as well as the initlizing the reels. Locally you can pull it from github, but I also found an alternative called imgbb. I used GIMP to edit the layers of each bell, cherry, fruit, diamond on top of each other.
 
 I created the CSS and designed it through creating a casino experience. Not only titling it but allowing the photo background through unsplash. I also wanted to include the current bet amount. 
+---------------------------------------------------------------------------------------------------------
 
 
 Unsolved Problems / Major Hurdles
@@ -49,6 +51,7 @@ Unsolved Problems / Major Hurdles
     10. But I learned a lot and I always love a challenge so I was excited to try this challenge, it really did give me a lot of great exposure to new functions, logic, code, and integrating all the html, css and javaScript. 
     11. Being creative. 
 Timeframes
+---------------------------------------------------------------------------------------------------------
 
 step 1: Define Game Concepts & Set Up Environment
     -Decide on the theme and visual style of the slot machine
@@ -120,7 +123,8 @@ step 9: Optimize and Refine:
     -Documentation to add comments to GA Team
     -Accessibility
 
---------------------------
+---------------------------------------------------------------------------------------------------------
+
 Technologies & Resources: I will be using
 
 Technologies Used:
@@ -132,6 +136,7 @@ VS Code
 Unsplash.com
 https://imgbb.com/ - Image URL Hoster
 codepen.io
+---------------------------------------------------------------------------------------------------------
 
 Resources: 
 FreecodeCamps - to see examples of others using and building similar games to see what ideas inspire my own
@@ -147,7 +152,8 @@ youtube.com: I will watch videos to see how other people constructed similar gam
 APIS - https://github.com/toddmotto/public-apis
 
 ProgrammableWeb: - API for random number generation and for related to gaming and win or loss outcome.. 
-------------------
+---------------------------------------------------------------------------------------------------------
+
 
 
 User Stories
@@ -170,6 +176,7 @@ Why:
     1. Fun & Logic - understanding of the slots and what the win or loss conditions are
     2. Nostaglia or Stress Relief  - simple game for positive and negative outcomes that users will use to kill time and reminiscent the game at a different environment.  
 
+---------------------------------------------------------------------------------------------------------
 
 Getting Started: 
 Installation Instructions:
