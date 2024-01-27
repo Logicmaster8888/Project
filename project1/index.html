@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- to be set for viewport properties for better responsiveness on different devices -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slot Machine Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,8 +13,8 @@
         <div class="header-text">Slot Machine Nav</div>
         <nav class="nav">
             <ul class="navlinks">
-                <li><a href="#">Play!</a></li>
-                <li><a href="#play-and-description"> Project Description</a></li>
+                <li><a href="index.html">Play!</a></li>
+                <li><a href="#description.html">Project Description</a></li>
             </ul>
         </nav>
     </header>
@@ -23,35 +23,29 @@
         <div class="container">
             <div class="header">
                 <h2>Come Play! The Slot Machine Game</h2>
-                <div class="betting-counter">
-                    Current Bet: <span id="currentBet">0</span>
-                </div>
-                <div class="betting-values">
-                    Betting Values Used: <span id="bettingValuesUsed">0</span>
-                </div>
+                <div class="betting-counter">Current Bet: <span id="currentBet">0</span></div>
+                <div class="betting-values">Betting Values Used: <span id="bettingValuesUsed">0</span></div>
                 <div class="slots">
                     <div class="reel" id="reel1"></div>
                     <div class="reel" id="reel2"></div>
                     <div class="reel" id="reel3"></div>
                 </div>
                 <div class="outset">
-                    <button class="start" onclick="startGame()">
-                        Start
-                    </button>
+                    <button class="start" onclick="startGame()">Start</button>
                 </div>
                 <div class="foot">
                     <span class="logger"></span>
                 </div>
                 <div class="reel-overlay">
                     <a href="https://ibb.co/xJKc8hh">
-                        <img src="https://i.ibb.co/dGs3JBB/Gamblingimages.png" alt="Gamblingimages" border="0">
+                        <a href="https://ibb.co/mFF9d4Z"><img src="https://i.ibb.co/Cssb4QC/Gamblingimages.png" alt="Gamblingimages" border="0"></a>
                     </a>
                 </div>
-                <div class="buttons">
-                    <button class="bet" value="50" onclick="handleBetClick(50)">Bet 50</button>
-                    <button class="bet" value="100" onclick="handleBetClick(100)">Bet 100</button>
-                    <button class="bet" value="150" onclick="handleBetClick(150)">Bet 150</button>
-                </div>
+            </div>
+            <div class="footer">
+                <button class="bet" onclick="handleBetClick()">Bet 50</button>
+                <button class="bet" onclick="handleBetClick()">Bet 100</button>
+                <button class="bet" onclick="handleBetClick()">Bet 150</button>
             </div>
         </div>
     </div>
