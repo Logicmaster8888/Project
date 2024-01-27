@@ -9,10 +9,38 @@ Game Slot Machine:
 Tyler Yim
 
 About the Project
+
 ![Alt text](image.png)
+![Alt text](image-1.png)
+![Alt text](image-3.png)
 
 Slot Machine Game
 
+How To:
+Researching through Freecodecamp, googling, find solutions through youtube. some details about Slot machines. Thinking about how it would work with 3 slots or 1 slot. Also having a betting feature. I utilized 50 Bet increments, 100 bets, 150 bets and I wanted the for the cost of one roll to be 50. I also developed the containers, div tags to utilize the buttons, the frames of the slots reel1, reel2, reel3. 
+
+Also assigning classes for my current counter, betting counters, slots, start button and reel overlay. 
+
+Images: 
+I found online images from unsplash, as well as iphoto trial version. It has slot machine icons. From my research it needs to be a continuous image for the reels to have a matched value. It's matched based on the size of the images. 
+
+So the images would be divided by 
+Also with what I researched I found that the a link would need to be use to pull the image. The image is important because the use of the image is focused on initilizing the reels. I have them to the side of the frame so you can see all the items and options. I have createImageelement functions that come up as well as the initlizing the reels. Locally you can pull it from github, but I also found an alternative called imgbb. I used GIMP to edit the layers of each bell, cherry, fruit, diamond on top of each other.
+
+I created the CSS and designed it through creating a casino experience. Not only titling it but allowing the photo background through unsplash. I also wanted to include the current bet amount. 
+
+
+Unsolved Problems / Major Hurdles
+    1. Major hurdles was figuring out the functions of the winning conditions
+    2. Getting the slot machine aligned with the image of cropped in with the num_items element
+    3. There is some bugs with the lag and then the height and weight of the num_items.
+    4. Having the game logic complexity down with possible spinning reels that has the winning combinations, it maybe chonky or chunky.
+    5. Being the first app I am coding it is going to be difficult but is going to be an exciting time. 
+    6. I want to work through some of the function logic. I did a lot of new research of new functions, such as delta, offset, indexing, createImageElement, Promise
+    7. I've set alerts to designate a prompt
+    8. The image sometimes doesn't all fit into the slots. 
+    9. Does not render well with mobile, but I did include the media element for responsive design. 
+    
 Timeframes
 
 step 1: Define Game Concepts & Set Up Environment
@@ -145,13 +173,3 @@ npm install
 
 Wireframes
 
-
-Unsolved Problems / Major Hurdles
-    1. Major hurdles was figuring out the functions of the winning conditions
-    2. Getting the slot machine aligned with the image of cropped in with the num_items element
-    3. There is some bugs with the lag and then the height and weight of the num_items.
-    4. Having the game logic complexity down with possible spinning reels that has the winning combinations, it maybe chonky or chunky.
-    5. Being the first app I am coding it is going to be difficult but is going to be an exciting time. 
-    6. I want to work through some of the function logic. I did a lot of new research of new functions, such as delta, offset, indexing, createImageElement, Promise
-    7. I've set alerts to designate a prompt
-    8. The image sometimes doesn't all fit into the slots. 
