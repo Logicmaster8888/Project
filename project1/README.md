@@ -186,4 +186,12 @@ npm install
 Wireframes
 
 
-Contributing
+Unsolved Problems / Major Hurdles
+    1. Major hurdles was figuring out the functions of the winning conditions
+    2. Getting the slot machine aligned with the image of cropped in with the num_items element
+    3. There is some bugs with the lag and then the height and weight of the num_items.
+    4. Having the game logic complexity down with possible spinning reels that has the winning combinations, it maybe chonky or chunky.
+    5. Being the first app I am coding it is going to be difficult but is going to be an exciting time. 
+    6. I want to work through some of the function logic. I did a lot of new research of new functions, such as delta, offset, indexing, createImageElement, Promise
+    7. I've set alerts to designate a prompt
+    8. The image sometimes doesn't all fit into the slots. 
