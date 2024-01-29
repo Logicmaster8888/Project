@@ -35,6 +35,13 @@ I found online images from unsplash, as well as iphoto trial version, featuring 
 From my research it needs to be a continuous image for the reels to have a matched value. It's matched based on the size of the images. A link would need to be use to pull the image. The image is important because the use of the image is focused on initilizing the reels. I have them to the side of the frame so you can see all the items and options. I have createImageelement functions that come up as well as the initlizing the reels. Locally you can pull it from github, but I also found an alternative called imgbb. I used GIMP to edit the layers of each bell, cherry, fruit, diamond on top of each other.
 
 I created the CSS and designed it through creating a casino experience. Not only titling it but allowing the photo background through unsplash. I also wanted to include the current bet amount. 
+
+Notes: debugging and finding solutions through my first project I did some research of similar projects. I am going to cite them here. I used these as frameworks to help me get to a win condition and understand the logic within the javaScript and CSS. It was a challenging first project but have been pacing along into it.
+
+https://codepen.io/josfabre/pen/abReBvP?editors=1111
+https://codepen.io/melstrict/pen/LYjwzBy
+
+Duely noting that committing is better than using codepen as an adjustment and also for version control. I found that the use of the different functions opened up a new can of worms but also allowed me to deep dive into the logical breakdown of debugging, sparsing, indexing, promise and win conditions. 
 ---------------------------------------------------------------------------------------------------------
 
 

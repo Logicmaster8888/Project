@@ -1,7 +1,133 @@
-:root {
-    --icon_width: 79px;
-    --icon_height: 79px;
-    --num_icons: 9;
+body {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url('https://source.unsplash.com/XkMpEeI3uJ0/1920x1080');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: auto;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header, .header-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    color: white;
+    background-color: green;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px auto;
+    display: block;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.betting-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.betting-counter, .betting-values {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid gold;
+    background-color: green;
+    font-family: sans-serif;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.slots {
+    position: relative;
+    width: calc(3.5 * 79px);
+    height: calc(3 * 79px);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3 * 79px;
+    background: linear-gradient(45deg, gold 50%, gold 100%);
+    border: 2px solid gold;
+    border-radius: 5px;
+}
+
+.reel {
+    position: relative;
+    width: calc(3 * 79px);
+    height: calc(3 * 79px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    background-image: url('https://i.ibb.co/0Jf85J0/Untitled.png');
+    background-position: 0 0;
+    background-repeat: repeat-y;
+}
+
+.reel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, transparent 30%, transparent 70%, rgba(0, 0, 0, 0.4) 100%);
+    box-shadow: inset 0 0 6px 2px rgba(0, 0, 0, 0.3);
+}
+
+.outset {
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bet, .start, .reset {
+    width: 100px;
+    color: gold;
+    background-color: green;
+    border: 2px solid;
+    border-radius: 7px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bet:hover,
+.start:hover,
+.footer button:hover {
+    background-color: gold;
+    color: white;
 }
 
 .debug {
@@ -10,160 +136,11 @@
     left: 50%;
     transform: translateX(-50%);
     padding: 4px;
-    background: white;
+    background: #ffd700;
     border: 1px solid rgba(0, 0, 0, 0.3);
     font-family: monospace;
     font-size: 1.6rem;
-}
-
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-
-body {
-    background-image: url('https://source.unsplash.com/XkMpEeI3uJ0/1920x1080');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow: auto; 
-}
-
-
-header {
-    background-color: #333;
-    color: gold;
-    padding: 10px;
-    text-align: center;
-    border: 3px solid gold;
-    border-radius: 6px;
-    height: 60px;
-    margin: 20px auto;
-    font-family: 'Helvetica Neue', sans-serif; 
-}
-
-.header h2 {
-    height: 40px;
-    margin: 20px 0;
-    font-size: 13px;
-    margin: 0;
-    padding: 0;
-    font-family: 'Georgia', serif;
-    color: gold;
-    text-align: center;
-}
-
-
-.nav {
-    margin: 0;
-    width: auto;
-    font-size: 24px;
-    font-weight: bold;
-    height: auto;
-    font-family: 'Arial', sans-serif;
-    background-color: gold;
-    border: 2px solid gold;
-    margin: 20px;
-    padding: 20px;
-    text-align: center;
-}
-
-.navlinks {
-    list-style: none;
-    margin: 0;
-    box-sizing: border-box;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.navlinks a {
-    font-size: 16px;
-}
-
-.navlinks li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.navlinks a:hover {
-    color: white;
-}
-
-@media (max-width: 768px) {
-    .navlinks {
-        display: block;
-    }
-
-    .navlinks li {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
-
-.content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.outset {
-    text-align: center;
-    cursor: pointer;
-}
-
-.gambling-image {
-    max-width: 100%;
-    height: 5px;
-    width: 5px;
-    border: 0;
-    display: block;
-    margin: 10px auto;
-}
-
-.slots {
-    position: relative;
-    width: calc(3 * 80px);
-    height: calc(3 * 80px);
-    display: flex;
-    padding: calc(0.3 * 80px);
-    background: linear-gradient(45deg, gold 50%, gold 100%);
-    border: 1px solid gold; 
-    border-radius: 2px;
-}
-
-
-
-
-.start {
-    width: 100px;
-    color: white;
-    background-color: green;
-    border: 2px solid green;
-    border-radius: 2px;
-    padding: 10px;
-    font-size: 16px;
-    margin: 5px auto;
-    display: block;
-    cursor: pointer;
-}
-
-.start.inset {
-    width: 100px;
-    text-align: center;
-    margin: 10px auto;
-    background-color: gold;
+    color: #006400;
 }
 
 .button-container {
@@ -171,88 +148,19 @@ header {
     margin-top: 20px;
 }
 
-
-.bet {
-    width: 100px;
-    color: gold;
-    background-color: green;
-    border: 2px solid;
-    border-radius: 7px;
-    box-sizing: border-box;
-    padding: 5px;
-    margin: 3px;
-    cursor: pointer;
-}
-
-
-.foot {
-    height: 100px;
-    width: 400px auto;
-    background-color: green;
-    border: 2px solid black;
-    order: 2;
-}
-
-
-.slots-inset {}
-
-
-.reel {
+.reel-overlay {
     position: relative;
-    width: 85px;
+    width: calc(3.5 * 79px);
     height: calc(3 * 79px);
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
-    overflow: hidden;
-    background-image: url("https://i.ibb.co/Cssb4QC/Gamblingimages.png");
-    background-position: 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3 * 79px;
+    background: linear-gradient(45deg, gold 50%, gold 100%);
 }
-
-
-
 
 .reel img {
     width: 100%;
     height: auto;
     object-fit: cover;
-}
-
-
-.betting-counter {
-    width: 150px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid gold;
-    background-color: green;
-    font-family: sans-serif;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-
-.betting-values {
-    width: 150px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid gold;
-    border-radius: 5px;
-    font-family: sans-serif;
-    background-color: green;
-    margin: 10px;
-}
-
-.reel-overlay {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 1; 
-    pointer-events: none; 
 }
 
