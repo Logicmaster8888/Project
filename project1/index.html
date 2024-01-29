@@ -7,17 +7,19 @@
     <title>Slot Machine Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
+<!-- Idea https://codecanyon.net/category/html5/games?term=casino%20games-->
 <body>
     <header>
         <nav class="nav">
-            <!-- Your navigation content goes here -->
+           
         </nav>
     </header>
+    <div class="side-background"></div> 
 
     <div class="content-container">
         <div class="container">
             <div class="header">
+                <!-- https://stackoverflow.com/questions/60031944/how-to-display-bet-calculator-result-on-my-html-page-with-code-created-in-javasc-->
                 <h2>Come Play! The Slot Machine Game</h2>
                 <div class="betting-info">
                     <div class="betting-counter">Current Bet: <span id="currentBet">0</span></div>
@@ -27,7 +29,8 @@
                     <div class="reel" id="reel1"></div>
                     <div class="reel" id="reel2"></div>
                     <div class="reel" id="reel3"></div>
-                </div>
+                </div> 
+                <!--https://www.freecodecamp.org/news/html-button-type-how-to-add-buttons-to-your-website/-->
                 <div class="button-container">
                     <!-- Bet buttons -->
                     <button class="bet" onclick="handleBetClick(50)">Bet 100</button>
@@ -44,8 +47,12 @@
             </div>
         </div>
     </div>
+    <!-- https://danielpuiatti.com/how-to-debug-html-css-and-javascript-tips-and-tricks-for-smooth-web-development/#:~:text=Most%20modern%20web%20browsers%20come,related%20to%20your%20HTML%20code.-->
     <div id="debug" class="debug"></div>
     <script src="app.js"></script>
+    <img style="position: fixed; right: 0; top: 0; height: 100vh; width: auto;" src="https://i.ibb.co/0Jf85J0/Untitled.png">
+<!-- https://logic-master.imgbb.com/ for the image sourcing -->
 </body>
 
 </html>
+

@@ -1,3 +1,5 @@
+/* https://www.w3schools.com/cssref/pr_background-image.php */ 
+
 body {
     color: white;
     width: 100vw;
@@ -12,18 +14,19 @@ body {
     overflow: auto;
 }
 
+/* https://source.unsplash.com/XkMpEeI3uJ0/1920x1080 background */ 
 html, body {
     height: 100%;
     margin: 0;
     box-sizing: border-box;
 }
-
+/* nesting containers https://dev.to/cruip/multiple-nested-containers-css-hack-oea */ 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+/* https://iu.pressbooks.pub/htmlcssbasics/chapter/headers-body-text/ */ 
 .header, .header-text {
     text-align: center;
     display: flex;
@@ -63,7 +66,7 @@ html, body {
     border-radius: 5px;
     margin: 10px;
 }
-
+/* https://www.sitepoint.com/set-css-margins-padding-cool-layout-tricks/ */ 
 .slots {
     position: relative;
     width: calc(3.5 * 79px);
@@ -75,7 +78,7 @@ html, body {
     border: 2px solid gold;
     border-radius: 5px;
 }
-
+/* calculation of slots https://codepen.io/josfabre/pen/abReBvP?editors=1111 */ 
 .reel {
     position: relative;
     width: calc(3 * 79px);
@@ -98,7 +101,7 @@ html, body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, transparent 30%, transparent 70%, rgba(0, 0, 0, 0.4) 100%);
     box-shadow: inset 0 0 6px 2px rgba(0, 0, 0, 0.3);
 }
-
+/* Psuedo code https://stackoverflow.com/questions/10855890/two-after-pseudo-elements */ 
 .outset {
     text-align: center;
     cursor: pointer;
@@ -109,7 +112,8 @@ html, body {
     text-align: center;
     margin-top: 20px;
 }
-
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers 
+*/ 
 .bet, .start, .reset {
     width: 100px;
     color: gold;
@@ -147,7 +151,7 @@ html, body {
     text-align: center;
     margin-top: 20px;
 }
-
+/* https://stackoverflow.com/questions/24197730/css-image-max-width-set-to-original-image-size  */ 
 .reel-overlay {
     position: relative;
     width: calc(3.5 * 79px);
@@ -162,5 +166,41 @@ html, body {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+/* Winner conditions https://stackoverflow.com/questions/56336348/javascript-slot-machine-what-is-a-simple-algorithm-for-picking-a-winner */
+.slots.win1::before,
+.slots.win2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color and opacity */
+  border-radius: 5px;
+  pointer-events: none; /* Allows interactions with elements beneath the overlay */
+  z-index: 2; /* Make sure it appears above other elements */
+}
+
+.slots.win1::after,
+.slots.win2::after {
+  content: "WINNER!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  color: gold; /* Adjust the text color */
+  z-index: 3; /* Make sure it appears above other elements */
+}
+/* https://bravenewmethod.com/2013/03/14/simple-slot-machine-with-html5/ */
+.slots.win1 {
+  border-color: red; 
+}
+
+.slots.win2 {
+  border-color: blue; 
 }
 

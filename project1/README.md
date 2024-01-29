@@ -13,7 +13,11 @@ About the Project
 
 ![Alt text](image.png)
 ![Alt text](image-1.png)
+![Alt text](image-9.png)
 ![Alt text](image-3.png)
+![Alt text](image-6.png)
+![Alt text](image-5.png)
+![Alt text](image-8.png)
 
 Slot Machine Game
 ---------------------------------------------------------------------------------------------------------
@@ -41,7 +45,7 @@ Notes: debugging and finding solutions through my first project I did some resea
 https://codepen.io/josfabre/pen/abReBvP?editors=1111
 https://codepen.io/melstrict/pen/LYjwzBy
 
-Duely noting that committing is better than using codepen as an adjustment and also for version control. I found that the use of the different functions opened up a new can of worms but also allowed me to deep dive into the logical breakdown of debugging, sparsing, indexing, promise and win conditions. 
+Duely noting that committing is better than using codepen as an adjustment and also for version control. I found that the use of the different functions opened up a new can of worms but also allowed me to deep dive into the logical breakdown of debugging, sparsing, indexing, promise and win conditions. The winning conditions require not only javascript but css to match. They have 2 winning conditions of 2 matches or 3 matches. A visual and an alert prompt to notify the winnings. Provided more of a earnings if you do win! 
 ---------------------------------------------------------------------------------------------------------
 
 
@@ -160,8 +164,50 @@ APIS - https://github.com/toddmotto/public-apis
 
 ProgrammableWeb: - API for random number generation and for related to gaming and win or loss outcome.. 
 ---------------------------------------------------------------------------------------------------------
+Reference: 
+Debugging: Resources for debugging JavaScript code.
 
+Array index mapping: Discussion on dynamically mapping icons with values from an array of objects.
 
+CodePen Example: A CodePen example, possibly related to the slot machine code.
+
+Slot machine algorithm: Discussion on a slot machine algorithm.
+
+Gambling script: A script-related solution for gambling.
+
+Machine Slot Math Logic: Breakdown of math logic for slot machines.
+
+Event listener function: Documentation on adding event listeners to HTML elements.
+
+Query Selection: Documentation on using querySelectorAll to select multiple elements.
+
+Button start game logic: Information on button-related logic for starting a game.
+
+Reset button in a JS game: Discussion on creating a reset button in a JavaScript game.
+
+Loop counter: Information on obtaining loop counter index using for-of syntax in JavaScript.
+
+Alert message for JS: Documentation on displaying alert messages in JavaScript.
+
+Array filtering by index and matching values: Discussion on filtering an array by index and matching values.
+
+Promise resolve: Documentation on the Promise object and resolving promises.
+
+RequestAnimationFrame: Documentation on the requestAnimationFrame method for smooth animations.
+
+BackgroundPosition: Documentation on the backgroundPosition property in CSS.
+
+Background alteration: Information on altering background elements.
+
+Transition of reel: CodePen example demonstrating the transition effect for a reel.
+
+Style Background alteration: CodePen example possibly related to styling background alterations.
+
+Access the return of win conditions: Discussion on accessing the return of win conditions.
+
+Alert Win Result JS: Documentation on JavaScript pop-up alerts.
+
+Timeout in JavaScript: Information on using setTimeout for timing in JavaScript.
 
 User Stories
 
